@@ -8,7 +8,7 @@ import MailboxOpen from "../images/open-mailbox.png";
 // import ClosedLetter from "../images/letter.png";
 // import OpenLetter from "../images/opened-letter.png";
 // import DraggableLetter from "../images/drag-letter.png";
-import Riddle from "../images/riddle.png";
+// import Riddle from "../images/riddle.png";
 import { navigate } from "gatsby";
 const Popup = () => {
   const [mailboxState, setMailboxState] = useState("closed");
@@ -241,7 +241,7 @@ const Popup = () => {
     <div>
       <img 
         ref={secondLetterRef}
-        src={isSecondLetterOpen ? Riddle : '/letter.png'} 
+        src={isSecondLetterOpen ? '/riddle.png' : '/letter.png'} 
         alt="Second Letter" 
         className="riddle-image"
       />
@@ -262,7 +262,6 @@ const Popup = () => {
 )}
 {isSecondLetterOpen && (
   <>
-    <h3 className="riddle-prompt">Solve this riddle to find your next surprise! 💝</h3>
     <button 
       className="next-button"
       onClick={() => navigate('/end')}

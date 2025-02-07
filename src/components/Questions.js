@@ -30,93 +30,83 @@ const Questions = () => {
     if (questionNumber === 1) {
       switch(answer) {
         case 'A':
-            new Audio(yippeeSound).play();
-            setFeedback({
-              message: "Correct. You have good taste and may live another day.",
-              type: 'success'
-            });
-          
-          break;
-
-        case 'B':
-
-            setPopup({ 
-              show: true, 
-              message: "You're a pedophile!", 
-              type: 'error' 
-            });
-            setSelectedAnswer(null);
-          break;
-
-        case 'C':
-            new Audio(honkSound).play();
-
-          const img = document.createElement('img');
-          img.src = '/mike-eye.jpg';
-          img.className = 'cursed-eye';
-          document.body.appendChild(img);
-          setTimeout(() => {
-            window.location.href = 'https://www.google.com/search?q=eye+surgery+near+me';
-          }, 3000);
-          break;
-
-        case 'D':
-            new Audio(snortSound).play();
-
-          setShowApology(true);
-          break;
-      }
-    } else if (questionNumber === 2) {
-      switch(answer) {
-        case 'A':
-            new Audio(sighSound).play();
-
           setFeedback({
-            message: "Too little, too late. Should've done that when you had the chance to. Try again 😠",
+            message: "hmmm thats not realistic at all 🤔",
             type: 'error'
           });
           break;
 
         case 'B':
-            new Audio(yippeeSound).play();
-
+          new Audio(yippeeSound).play();
           setFeedback({
-            message: "Correct. As you should.",
+            message: "Correct! Let's continue...",
             type: 'success'
           });
-          setShowRoses(true);
-
           break;
 
-        case 'C':
-          new Audio(clownSound).play();
-
-          setTimeout(() => {
-
+          case 'C':
             setFeedback({
-              message: "Hope ur proud of this answer 🤡",
+              message: "i alrdy brought my food with me",
               type: 'error'
             });
             setTimeout(() => {
-              window.location.reload();
-            }, 2000);
-          }, 4000);
-          break;
-
-          case 'D':
-            new Audio(betrayalSound).play();
-            setTimeout(() => {
-              setPopup({
-                show: true,
-                message: "❌ CRITICAL ERROR: LOYALTY NOT FOUND ❌",
-                type: 'error'
-              });
-            }, 2000);
+              const img = document.createElement('img');
+              img.src = '/food-image.jpg';
+              img.className = 'food-image zoom-effect';
+              document.body.appendChild(img);
+            }, 1500);
             break;
           
+
+        case 'D':
+          new Audio(sighSound).play();
+          setPopup({ 
+            show: true, 
+            message: "🤣🤣🤣🤣🤣🤣", 
+            type: 'error' 
+          });
+          break;
+      }
+    } else if (questionNumber === 2) {
+      switch(answer) {
+        case 'A':
+          new Audio(clownSound).play();
+          setFeedback({
+            message: "CHANGE MY NAME ON YO PHONE RN",
+            type: 'error'
+          });
+          setTimeout(() => {
+            window.location.reload();
+          }, 5000);
+          break;
+
+        case 'B':
+          setPopup({ 
+            show: true, 
+            message: "tsk tsk pp always on yo mind", 
+            type: 'error' 
+          });
+          break;
+
+        case 'C':
+          new Audio(yippeeSound).play();
+          setFeedback({
+            message: "Perfect answer! ✨",
+            type: 'success'
+          });
+          break;
+
+        case 'D':
+          new Audio(betrayalSound).play();
+          setFeedback({
+            message: "wow just say you hate me",
+            type: 'error'
+          });
+          break;
       }
     }
   };
+
 
   const handleApology = (e) => {
     e.preventDefault();
@@ -130,22 +120,22 @@ const Questions = () => {
     switch(questionNumber) {
       case 1:
         return {
-          question: "If you had to compare me to a fictional character, who would I be?",
+          question: "If we were stuck on a desert island, what would the be the first thing I do?",
           options: [
-            { id: 'A', text: "Raven from Teen Titans" },
-            { id: 'B', text: "Vanellope from Wreck-It Ralph" },
-            { id: 'C', text: "Mike Wazowski" },
-            { id: 'D', text: "Peppa Pig" }
+            { id: 'A', text: "Build a sand castle for us to live in" },
+            { id: 'B', text: "Write sahil ❤️ nishi on sand" },
+            { id: 'C', text: "Find food" },
+            { id: 'D', text: "Build a wifi Tower out of coconuts" }
           ]
         };
       case 2:
         return {
-          question: "If you could go back in time, what would you do differently?",
+          question: "If you were to change my name, what would it be?",
           options: [
-            { id: 'A', text: "Give you the hinge rose LIKE I SHOULD HAVE" },
-            { id: 'B', text: "Hand deliver rose to you personally on my knees" },
-            { id: 'C', text: "Send khushi a rose, an apology text, AND a box of chocolates for the inconvenience" },
-            { id: 'D', text: "Wouldn't change a thing" }
+            { id: 'A', text: "The Deep" },
+            { id: 'B', text: "Big banana" },
+            { id: 'C', text: "I wont change it. I love the name Sahil." },
+            { id: 'D', text: "Something with bihari in it" }
           ]
         };
     }

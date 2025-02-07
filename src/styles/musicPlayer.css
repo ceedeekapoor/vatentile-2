@@ -9,10 +9,11 @@
 #player-container {
   position: absolute;
   top: 11%;
-  left: 5%;
+  left: 1%;
   width: 430px;
   height: 100px;
   margin: -4px auto;
+  z-index: 1000;
 }
 /* 
 #player-bg-artwork {

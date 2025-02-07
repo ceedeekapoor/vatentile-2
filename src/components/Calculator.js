@@ -103,13 +103,15 @@ const LoveCalculator = () => {
 
     setTimeout(() => {
       setIsLoading(false);
-      if( (name1.toLowerCase() === "siddhi" && name2.toLowerCase() === "saad") ||
-      (name1.toLowerCase() === "saad" && name2.toLowerCase() === "siddhi") ) 
-        {
+      if (
+        (name1.toLowerCase() === "sahil" && (name2.toLowerCase() === "nishi" || name2.toLowerCase() === "nisha")) ||
+        ((name1.toLowerCase() === "nishi" || name1.toLowerCase() === "nisha") && name2.toLowerCase() === "sahil")
+      ) {
         setResult("1000000000 % match");
       } else {
         setResult("image");
       }
+      
     }, 10000);
   };
 
@@ -204,7 +206,7 @@ const LoveCalculator = () => {
               <img src={Angry} alt="Not Compatible" className="result-image" />
               <p
               className="result-message"
-              >WOW whose name r u searching WHORE</p>
+              >WOW whose name r u searching</p>
             </div>
           ) : (
             <div className="success-match">

@@ -11,30 +11,30 @@ const MusicPlayer = () => {
   const [audio, setAudio] = useState(null);
 
   const albums = [
-    "Chet Baker",
-    "Dayglow",
+    "Omar Apollo",
+    "Sufjan Stevens",
     "Cigarettes After Sex",
-    "Matthew Ifield",
-    "Rex Orange County",
-    "The Cardigans",
+    "Fitz and The Tantrums",
+    "Asha Bhosle",
+    "Enchanted",
   ];
 
   const trackNames = [
-    "Like Someone In Love",
-    "Close to You",
+    "Archtype",
+    "Mystery of Love",
     "K.",
-    "Like I Do",
-    "THE SHADE",
-    "Lovefool",
+    "Out of my League",
+    "Abhi Na Jao Chhod Kar",
+    "Taylor Swift",
   ];
 
   const albumArtworks = [
     "/images/1.jpg",
-    "/images/2.webp",
+    "/images/2.jpg",
     "/images/3.png",
-    "/images/4.jpeg",
-    "/images/5.jpg",
-    "/images/6.jpeg",
+    "/images/4.jpg",
+    "/images/5.webp",
+    "/images/6.jpg",
   ];
 
   const trackUrl = [
