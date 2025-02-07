@@ -1,0 +1,41 @@
+.maze {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wall {
+  background-color: black;
+}
+
+
+
+.start,
+.end {
+  background-color: lightgreen;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.player {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+}

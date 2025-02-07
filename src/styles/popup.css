@@ -1,0 +1,218 @@
+.popup-container {
+  text-align: center;
+}
+
+.mailbox-container {
+  position: relative;
+}
+
+.open-button {
+  /* margin-top: 10px; */
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.open-button:hover {
+  transform: scale(1.1);
+}
+
+.draggable-letter {
+  position: absolute;
+  top: 222px;
+  left: 38.8%;
+  transform: translateX(-50%);
+  cursor: grab;
+  width: 81px;
+  height: 63px;
+}
+
+.letter-container {
+  /* margin-top: 200px; */
+
+}
+.closed-letter,.opened-letter {  
+ width: 500px;
+}
+.valentine-message {
+  margin-top: 20px;
+  background: pink;
+  padding: 20px;
+  border-radius: 15px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.draggable-letter {
+  cursor: grab;
+  transition: transform 0.2s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+  /* Prevent default translucent drag effect */
+  -webkit-tap-highlight-color: transparent;
+  /* Add depth while dragging */
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+}
+
+.draggable-letter.dragging {
+  cursor: grabbing;
+  transform: scale(1.05);
+  /* Enhance shadow while dragging */
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.mailbox-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 450px;
+}
+
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.heading{
+  margin-bottom: 0 !important;
+}
+
+.mailbox-container img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.letter-container {
+  position: relative;
+  /* margin-top: 200px; */
+
+}
+
+.scissors {
+  cursor: grab;
+  /* Remove or reduce transition time */
+  transition: transform 0.1s ease; /* Reduced from 0.2s to 0.1s */
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+  width: 100px;
+  position: absolute;
+  top: 180px;  /* Adjust vertical position */
+  left: -100px; 
+}
+
+
+.scissors.dragging {
+  cursor: grabbing;
+  transform: scale(1.05);
+  /* Enhance shadow while dragging */
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.letter {
+  transition: all 0.3s ease;
+}
+.valentine-message {
+  margin-top: 20px;
+  background: pink;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.yes-button, .no-button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.yes-button {
+  background: #ff4d6d;
+  color: white;
+  font-weight: 700;
+}
+
+.yes-button:hover {
+  transform: scale(1.1);
+  background: #ff3366;
+}
+.no-button {
+  position: relative;
+  background: #f8f8f8;
+  transition: transform 0.3s ease;
+  color: #333;
+  font-weight: 700;
+}
+
+.no-button:hover {
+  cursor: not-allowed;
+}
+
+.celebration-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.yes-button:active {
+  transform: scale(0.95);
+  background: #ff1f4c;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-out forwards;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.riddle-image {
+  width: 400px;
+  /* border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; */
+}
+.riddle-prompt {
+  margin-top: 20px;
+  color: #ff4d6d;
+  font-size: 24px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+.yey-txt{
+  font-size: 6rem;
+}
