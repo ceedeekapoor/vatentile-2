@@ -28,9 +28,6 @@ const App = () => {
 
              <MusicPlayer />
           <LoveCalculator />
-
-              // <Countdown />
-
      <GamesSection />
 
            
