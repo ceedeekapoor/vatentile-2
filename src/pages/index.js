@@ -24,22 +24,17 @@ const App = () => {
       <title>Valentine - Home</title>
 
       </Helmet>
-      {isValentinesDay ? (
-        <>
+      
+
+             <MusicPlayer />
           <LoveCalculator />
 
-        </>
-      ) : (
-        <>
-             <MusicPlayer />
-
-              <Countdown />
+              // <Countdown />
 
      <GamesSection />
 
            
-          </>
-      )}
+
     </div>
   );
 };
