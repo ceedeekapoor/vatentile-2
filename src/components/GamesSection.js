@@ -18,7 +18,7 @@ const GamesSection = () => {
       ) : (
         <div className="game-container">
           <button onClick={() => setSelectedGame(null)}>← Back to Games</button>
-          {selectedGame === 'puzzle' && <PuzzleGame rows={5} cols={5} />}
+          {selectedGame === 'puzzle' && <PuzzleGame rows={10} cols={10} />}
           {selectedGame === 'maze' && <LoveMaze />}
         </div>
       )}
